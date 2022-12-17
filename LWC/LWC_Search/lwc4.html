@@ -1,0 +1,54 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 12-06-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+        <div class="main">
+    
+            <lightning-card title = "Search Account" icon-name = "standard:account">    
+                <div class="A">    
+                    <lightning-input type = "search" onchange = {handleKeyChange} placeholder="Type Account here..." label="Quick Search">  
+
+                    </lightning-input>    
+                    <template if:true = {accounts}>                    
+                <div style="height: 300px;">    
+                            <lightning-datatable key-field="Id"  
+                                                data={accounts}  
+                                                columns={columns}  
+                                                hide-checkbox-column="true"  
+                                                show-row-number-column="true"  
+                                                onrowaction={callRowAction}>  
+                            </lightning-datatable>    
+                </div>  
+                    </template>        
+                    <template if:true = {error}>    
+                        {error}>                    
+                    </template>    
+                </div>    
+            
+            </lightning-card>  
+            <lightning-card>
+                <lightning-carousel target="_blank">
+                    <lightning-carousel-image
+                        src = "https://techcrunch.com/wp-content/uploads/2019/05/Salesforce-logos.jpg"
+                        header = "Salesforce"
+                        description = "Salesforce is the world's #1 customer relationship management (CRM) platform. We help your marketing, sales, commerce, service and IT teams work as one from anywhere — so you can keep your customers happy everywhere."
+                        href = "https://www.salesforce.com/eu/?ir=1"
+                        style="height:500px ">
+                    </lightning-carousel-image>
+                    <lightning-carousel-image
+                        src = "https://cdn.vox-cdn.com/thumbor/Ovqs-04OdrZEfYnDLCZDXiCb5-0=/0x0:2040x1360/1400x1400/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/15464486/DSCF9158.0.0.1439490408.jpg"
+                        header = "Google"
+                        description = "Google is an American company that is most commonly known as a search engine. Although the company made it's name as a search engine, and the vast majority of its income comes from advertising because of this, it has branched out into a number of areas such as cloud computing, software and hardware."
+                        href = "https://about.google/"
+                        style="height:500px ">
+                    </lightning-carousel-image>             
+                </lightning-carousel>
+            </lightning-card>
+
+        </div>
+
+</template>
