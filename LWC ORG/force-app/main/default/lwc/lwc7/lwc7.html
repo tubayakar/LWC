@@ -1,0 +1,74 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 12-07-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+
+    <lightning-card title="Quick Email Template" icon-name="custom:custom12">
+
+        <div class="slds-m-around_medium"> 
+            <lightning-input label="Sales Representative Info Section:" value={fName} onchange={fNamechangeHandler} placeholder="Type First Name here..."></lightning-input>
+           
+            <lightning-input label="" value={lName} onchange={lNamechangeHandler} placeholder="Type Last Name here..."></lightning-input>
+
+            <lightning-input label="" value={phone} onchange={phonechangeHandler} placeholder="Type Phone here..."></lightning-input>
+            
+            <br>
+
+            <lightning-input label="Customer Info Section:" value={fNameCustomer} onchange={fNameCustomerchangeHandler} placeholder="Type Customer First Name here..."></lightning-input>
+            
+            <lightning-input label="" value={lNameCustomer} onchange={lNameCustomerchangeHandler} placeholder="Type Customer Last Name here..."></lightning-input>  
+             
+            <br>
+
+            <lightning-input label="General Info Section:" value={date} onchange={datechangeHandler} placeholder="Type Date here..."></lightning-input>
+
+            <lightning-input label="" value={text} onchange={textchangeHandler} placeholder="Type Text here..."></lightning-input>
+        </div>
+
+        <br>
+
+        <h1>Your Email Template is Ready:</h1>
+
+        <br>
+
+        <div class="classA">
+            <br>
+            <p>Hello, {fNameCustomer} {lNameCustomer} !</p>
+            <p>{text}</p>
+            <br>
+            <p>Contact us for detailed information.<br>Have a nice day...<br><br>Sales Representative {fName} {lName} </p>
+            <p>{phone}</p>
+            <br>
+            <p>{date}</p>
+            <br>
+        </div>
+
+        <br>
+
+        <div class="main">
+            <lightning-breadcrumbs>
+                <lightning-breadcrumb
+                    label="Account"
+                    href="https://triforcia-1ba-dev-ed.develop.lightning.force.com/lightning/o/Account/list?filterName=00BDn000007cow1MAA"
+                    target="_blank">
+                </lightning-breadcrumb>
+                <lightning-breadcrumb
+                    label="Contact"
+                    href="https://triforcia-1ba-dev-ed.develop.lightning.force.com/lightning/o/Contact/list?filterName=00BDn000007corWMAQ"
+                    target="_blank">
+                </lightning-breadcrumb>
+                <lightning-breadcrumb
+                    label="Case"
+                    href="https://triforcia-1ba-dev-ed.develop.lightning.force.com/lightning/o/Case/list?filterName=00BDn000007corTMAQ"
+                    target="_blank">
+                </lightning-breadcrumb>
+            </lightning-breadcrumbs>
+        </div>
+        
+    </lightning-card>
+    
+</template>

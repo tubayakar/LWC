@@ -1,0 +1,18 @@
+.slds-m-around_medium{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.classA{
+    padding-left: 20px;
+    background-color: rgb(214, 212, 79);
+    text-decoration: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main{
+    padding-left: 20px;
+    color: black;
+    background-color: rgb(230, 228, 112);
+    background-position: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

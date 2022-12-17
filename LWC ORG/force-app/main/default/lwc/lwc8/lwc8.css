@@ -1,0 +1,20 @@
+.classA{
+
+    background-color: rgb(225, 230, 233);
+    text-align: center;
+    background-image:url(https://imgix.datadoghq.com/img/blog/monitor-salesforce-logs-datadog/salesforce_hero.png?w=1920&auto=format&q=80&fit=max&lossless=1&dpr=1);
+    
+}
+
+.classB{
+
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq2K8yAxkuYyX0sUHq1-g29aZ4ywjmYygH-g&usqp=CAU);
+
+}
+
+p{
+  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+   
